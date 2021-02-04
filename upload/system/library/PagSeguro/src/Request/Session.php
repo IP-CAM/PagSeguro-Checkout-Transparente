@@ -56,6 +56,8 @@ class Session
             }
         } elseif ($request->getHttpStatus() === 401) {
             throw new AuthException($this->env, 'Check your credentials', 1000);
+        } else {
+            throw new PagSeguroRequestException($this->env, $request, [], 'Server not responding', 1050);
         }
     }
 
