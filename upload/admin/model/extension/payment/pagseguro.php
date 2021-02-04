@@ -70,7 +70,7 @@ class ModelExtensionPaymentPagSeguro extends Model
 
         $query = $this->db->query('
             SELECT ' . implode(',', $columns) . '
-            FROM ' . DB_PREFIX . 'pagseguro_orders
+            FROM `' . DB_PREFIX . 'pagseguro_orders`
             WHERE `order_id` = "' . $id . '"
         ');
 

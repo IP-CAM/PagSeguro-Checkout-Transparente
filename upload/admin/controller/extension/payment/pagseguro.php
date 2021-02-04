@@ -243,8 +243,8 @@ class ControllerExtensionPaymentPagseguro extends Controller
             if ($result) {
                 $this->session->data['pagseguro_success'] = $this->language->get('text_void_success');
                 $order_status_id = $this->config->get(self::EXTENSION_PREFIX . 'order_status_cancelled');
-                $this->db->query('UPDATE ' . DB_PREFIX . 'order SET order_status_id = "' . $order_status_id . '" WHERE order_id = "' . intval($order_id) . '"');
-                $this->db->query("INSERT INTO " . DB_PREFIX . "order_history SET order_id = '" . intval($order_id) . "', order_status_id = '" . $order_status_id . "', notify = '0', comment = '', date_added = NOW()");
+                $this->db->query('UPDATE `' . DB_PREFIX . 'order` SET order_status_id = "' . $order_status_id . '" WHERE order_id = "' . intval($order_id) . '"');
+                $this->db->query("INSERT INTO `" . DB_PREFIX . "order_history` SET order_id = '" . intval($order_id) . "', order_status_id = '" . $order_status_id . "', notify = '0', comment = '', date_added = NOW()");
             } else {
                 $this->session->data['pagseguro_failed'] = $this->language->get('text_void_failed');
             }
@@ -294,8 +294,8 @@ class ControllerExtensionPaymentPagseguro extends Controller
             if ($result) {
                 $this->session->data['pagseguro_success'] = $this->language->get('text_refund_success');
                 $order_status_id = $this->config->get(self::EXTENSION_PREFIX . 'order_status_returned');
-                $this->db->query('UPDATE ' . DB_PREFIX . 'order SET order_status_id = "' . $order_status_id . '" WHERE order_id = "' . intval($order_id) . '"');
-                $this->db->query("INSERT INTO " . DB_PREFIX . "order_history SET order_id = '" . intval($order_id) . "', order_status_id = '" . $order_status_id . "', notify = '0', comment = '', date_added = NOW()");
+                $this->db->query('UPDATE `' . DB_PREFIX . 'order` SET order_status_id = "' . $order_status_id . '" WHERE order_id = "' . intval($order_id) . '"');
+                $this->db->query("INSERT INTO `" . DB_PREFIX . "order_history` SET order_id = '" . intval($order_id) . "', order_status_id = '" . $order_status_id . "', notify = '0', comment = '', date_added = NOW()");
             } else {
                 $this->session->data['pagseguro_failed'] = $this->language->get('text_refund_failed');
             }

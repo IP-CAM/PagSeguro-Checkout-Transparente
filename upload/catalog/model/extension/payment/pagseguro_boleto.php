@@ -9,7 +9,7 @@ class ModelExtensionPaymentPagSeguroBoleto extends Model
         $this->load->language('extension/payment/pagseguro_boleto');
 
         $query = $this->db->query("
-            SELECT * FROM " . DB_PREFIX . "zone_to_geo_zone
+            SELECT * FROM `" . DB_PREFIX . "zone_to_geo_zone`
             WHERE
                 geo_zone_id = '" . (int)$this->config->get(self::EXTENSION_PREFIX . 'geo_zone_id') . "'
                 AND country_id = '" . (int)$address['country_id'] . "'
