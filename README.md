@@ -1,71 +1,43 @@
-![Create Releasea by Tag](https://github.com/opencart-extension/PagSeguro-Checkout-Transparente/workflows/Create%20Releasea%20by%20Tag/badge.svg)
-![Generate Doc](https://github.com/opencart-extension/PagSeguro-Checkout-Transparente/workflows/Generate%20Doc/badge.svg)
-![Test SDK with PHPUnit](https://github.com/opencart-extension/PagSeguro-Checkout-Transparente/workflows/Test%20SDK%20with%20PHPUnit/badge.svg)
+#: rocket: PagSeguro Transparent Checkout
+ > Transparent PagSeguro Checkout Module for OpenCart
 
-# :rocket: PagSeguro Checkout Transparente
- > Módulo PagSeguro Checkout Transparente para OpenCart
+The "PagSeguro Transparente" project was created to facilitate the purchase for the end user. It, when installed, has the function of making the purchase easier, because the famous 'redirect' is 'eliminated'.
 
-O projeto "PagSeguro Transparente" foi criado para facilitar a compra para o usuário final. Ele, quando instalado, tem a função de tornar a compra mais fácil, pois o famoso 'redirecionamento' é 'eliminado'.
+#: dollar: Advantages
 
-# :dollar: Vantagens
+### Payment made entirely on your e-commerce or website
+The customer stays in your e-commerce environment or website during the entire purchase process, without the need for registration or intermediate payment pages.
 
-### Pagamento feito totalmente em seu e-commerce ou site
-O cliente fica no ambiente do seu e-commerce ou site durante todo o processo de compra, sem necessidade de cadastro ou páginas intermediárias de pagamento.
+### Increase your sales conversion
+You can have an increase of up to 30% in the conversion of your sales, since the number of steps in your checkout will be reduced and your customers will not be directed to pages external to your e-commerce or website.
 
-### Aumento de conversão de suas vendas
-Você pode ter um aumento de até 30% na conversão de suas vendas, uma vez que, o número de etapas do seu checkout será reduzido e seus clientes não serão direcionados para páginas externas ao seu e-commerce ou site.
+### Data security made by PagSeguro
+Your customers' payment details are sent directly from the browser to PagSeguro. Without going through your servers, you don't have to worry about the security of this information.
 
-### Segurança de dados feita pelo PagSeguro
-Os dados de pagamento dos seus clientes são direcionados diretamente do navegador para o PagSeguro. Sem passar por seus servidores, assim não precisa se preocupar com a segurança destas informações.
+#: hammer: Requirements
 
-# :hammer: Requisitos
-
-| Ferramenta | Versão |
+| Tool | Version |
 | ---------- | ------ |
-| PHP        | >= 7.3 |
-| cURL       | >= 7   |
-| ext-json   | -      |
-| ext-iconv  | -      |
-| ext-xml    | -      |
-| ext-curl   | -      |
-| SSL        | -      |
+| PHP | > = 7.3 |
+| cURL | > = 7 |
+| ext-json | - |
+| ext-iconv | - |
+| ext-xml | - |
+| ext-curl | - |
+| SSL | - |
 
-# :computer: Instalar via Git/GitHub
+#: computer: Install via Git / GitHub
 
-Para realizar o download via GitHub, é necessário possuir o [composer](https://getcomposer.org/) instalados em seu pc/notebook/etc.
+To download via GitHub, it is necessary to have [composer] (https://getcomposer.org/) installed on your pc / notebook / etc.
 
-1. Para baixar, acesse seu terminal e execute o comando abaixo
-```bash
+1. To download, access your terminal and execute the command below
+`` bash
 git clone https://github.com/opencart-extension/PagSeguro-Checkout-Transparente.git PagSeguro
-```
+``
 
-2. Caso não possua o *Git*, realize o download através da url [https://github.com/opencart-extension/PagSeguro-Checkout-Transparente/archive/develop.zip](https://github.com/opencart-extension/PagSeguro-Checkout-Transparente/archive/develop.zip "Download do repositório") e realize a extração do arquivo.
+2. If you don't have * Git *, download it via the url [https://github.com/opencart-extension/PagSeguro-Checkout-Transparente/archive/develop.zip▪(https://github.com/ opencart-extension / PagSeguro-Checkout-Transparente / archive / develop.zip "Download repository") and perform the file extraction.
 
-3. Acesse a pasta/diretório criada
+3. Access the created folder / directory
 
-4. Dentro da pasta/diretório, execute o *composer* para instalar as dependências necessárias para o funcionamento.
-```bash
-composer install
-```
-
-5. Após a instalação feita, é possível enviar os arquivos para a raiz de sua no servidor remoto ou local.
-
-# :new: Novidades
-
-**[2.0.1]**
-
-* o botão de 2 via aparecia somente no tema padrão ([823a70c](https://github.com/opencart-extension/PagSeguro-Checkout-Transparente/commit/823a70c44823d5dbaa1b463a87722da67af1acaf))
-* **ocmod:** limita correção do bug do twig na versão OC 3.0.3.6 ([6472ba0](https://github.com/opencart-extension/PagSeguro-Checkout-Transparente/commit/6472ba0e590d0e6e6c1d4a85dd819629963b03d1))
-* **view:** corrige falha na exibiçao dos detalhes de pagamento ([cf61a38](https://github.com/opencart-extension/PagSeguro-Checkout-Transparente/commit/cf61a38eb4d6ec2b2bd599792933e3d0f7d90cd5)), closes [#38](https://github.com/opencart-extension/PagSeguro-Checkout-Transparente/issues/38)
-* verifica se a url no download veio mesmo base64 encodada ([3864a74](https://github.com/opencart-extension/PagSeguro-Checkout-Transparente/commit/3864a74c26c05c6686add2c4e83777c2f3e50958))
-* Remove trailing comma para maior suporte de versões do PHP ([6d76945](https://github.com/opencart-extension/PagSeguro-Checkout-Transparente/commit/6d76945f601864e74b1cd07e442524aefbcbc864))
-
-**[2.0.0]**
-
- - Nova versão
-
-# :books: Documentação
-https://opencart-extension.github.io/PagSeguro-Checkout-Transparente/
-
-# :interrobang: Suporte
-https://valdeirpsr.atlassian.net/servicedesk/customer/portal/3
+4. Within the folder / directory, run * composer * to install the necessary dependencies for operation.
+`` bash
